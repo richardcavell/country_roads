@@ -7,7 +7,7 @@ country.dsk: COUNTRY.BIN
 	decb copy -r $< $@,$<
 	@echo "Done"
 
-COUNTRY.BIN: country_road.asm
+COUNTRY.BIN: country_roads.asm
 	@echo "Assembling..."
 	asm6809 -C -o COUNTRY.BIN $<
 	@echo "Done"
